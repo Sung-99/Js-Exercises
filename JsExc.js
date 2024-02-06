@@ -40,28 +40,32 @@ function animate_string(id) {
 */
 
 //My solution
+  let myInterval;
+
+    
 
   window.onclick = function(event){
     
+    let Startbtn = document.getElementById("btnStart");
+    let btnStop= document.getElementById("btnStop");
 
-
-    let rodarbtn = document.getElementById("btnStart");
-    document.getElementById("btnStop").addEventListener("click", stop);
-
-    let getId= document.getElementById("tt");
+    let getId= document.getElementById("tt"); //Any id name
     let getSstringToReplace = getId.childNodes[0].data;
-
-
-    let myInterval 
     
 
-    if(event.target == rodarbtn){   
-        myInterval = setInterval(run, 100);
+
+   
+    
+
+    if(event.target == Startbtn){   
+        myInterval = setInterval(start, 100);
     }
-    function stop(){
-        clearInterval(myInterval);
+
+    if(event.target == btnStop){   
+          clearInterval(myInterval);
     }
-    function run(){   
+
+    function start(){   
         getSstringToReplace= getSstringToReplace[getSstringToReplace.length-1] + getSstringToReplace.substring(0, getSstringToReplace.length - 1);  
         
         getId.childNodes[0].data = getSstringToReplace;

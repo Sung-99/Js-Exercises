@@ -1,20 +1,19 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
+title: 'Exercises in Js'
 labels: good first issue, help wanted
 assignees: Sung-99
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Just a common issue hoping to finding resolutions about exercise i have been making**
+If possible, i would appreciate if someone show me a differente way of solving some exercises i posting here 
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Possible solution**
+A difference raw solution, possibly with no functions built in on javascript library
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**alternatives**
+I already try solve many of them using functions and built in functions, but i m looking for differente way 
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+

@@ -10,4 +10,9 @@ body{
     margin-left: 0px;
     margin-right: 0px;
     padding: 20px;
+    text-align: center;
+}
+
+.Test_space{
+    color: rgb(255, 255, 255);
 }

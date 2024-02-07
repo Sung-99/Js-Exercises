@@ -74,7 +74,7 @@ Vitor Hugo Mota Soares
 
 
 
-[js-shield]:https://img.shields.io/badge/Javascript--Blue?style=for-the-badge&logo=Javascript&logoColor=white&label=Python&labelColor=dark%20purple
+[js-shield]:https://img.shields.io/badge/Javascript--Blue?style=for-the-badge&logo=Javascript&logoColor=white&label=Javascript&labelColor=dark%20purple
 [Fóco-shield]: https://img.shields.io/badge/F%C3%B3co--silver?style=for-the-badge&logoColor=white&labelColor=orange
 [Dedicação-shield]:https://img.shields.io/badge/Dedica%C3%A7%C3%A3o--red?style=for-the-badge&logoColor=white&labelColor=Navy%20blue
 [Projeto-shield]: https://img.shields.io/badge/Projeto--red?style=for-the-badge&logoColor=white&labelColor=silver

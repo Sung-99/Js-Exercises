@@ -40,9 +40,12 @@
 ####  Linguagens usadas e Softwares
 
 
--Javascript<br>
--Html<br>
--Gitbash<br>
+-Javascript
+
+-Html
+
+-Gitbash
+
 -VsCode
 
 ####  Sistema operacional

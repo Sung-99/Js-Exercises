@@ -1,3 +1,8 @@
+//Simple exercise from https://www.w3resource.com/javascript-exercises/
+//Calculate the area of three triangle types. I just did some add up set to
+//look more fittable on html
+
+
 let EquiConst = document.querySelector("#Eqi");
 let RighttConst = document.querySelector("#Rec");
 let IsoConst = document.querySelector("#Iso");

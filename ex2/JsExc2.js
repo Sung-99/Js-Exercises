@@ -3,9 +3,18 @@
 //look more fittable on html
 
 
-let MyString = document.querySelector(".rotate_h1_content").childNodes[0].data;
-
+let MyString = document.querySelector(".rotate_h1_content");
 
 let output = document.querySelector(".output");
 
-output.textContent = MyString.charAt(1);
+
+
+
+
+A = MyString.textContent;
+
+
+setInterval(function() {
+    
+    output.textContent =  A = A.slice(1,10) + A[0];
+},200)

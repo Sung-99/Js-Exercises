@@ -9,13 +9,13 @@
                 /*Code answer*/
 
 
-let answer = document.querySelector(".Answer");
 
 
 
 
 
 
+    let append = document.querySelector('.answer');
     let daysss = ['Dom','Seg','Terc','Quar','Quin', 'Sex', 'Sab']
     for (x = 2014; x < 2050; x ++)
     {
@@ -23,7 +23,10 @@ let answer = document.querySelector(".Answer");
 
         if (daysss[dat.getDay()] === 'Dom')
         {
-            console.log('First january will be on ' + x + 'year');
+           let answer = document.createElement("p");
+           answer.textContent = 'First january will be on ' + x + ' year';
+           append.appendChild(answer);
+
         }
     }
     

@@ -16,7 +16,7 @@
 
 let Divouter = document.createElement("div");
 Divouter.className = "Outer-Quest";
-
+Divouter.id = 'OUTER';
 Divouter.style.color = 'white';
 Divouter.style.paddingTop = '50px';
 Divouter.style.marginTop = '50px';
@@ -37,34 +37,46 @@ submittt.style.height = "20px";
 submittt.style.width = "70px";
 submittt.textContent = "Submit";
 
-
+let divExcl = document.createElement("div");
+divExcl.className = "delli";
+divExcl.id = 'delliite';
 
 document.body.appendChild(Divouter);
 
 Divouter.appendChild(Answer);
 Divouter.appendChild(submittt);
+Divouter.appendChild(divExcl);
 
 
 
+take_Classsname = document.querySelector('#delliite');
 
 
-
-
+let cont = 0;
 submittt.addEventListener("click", (e) =>{
     e.preventDefault();
     
     let randd = Math.floor((Math.random() * (10 - 0) + 0));
     let giveAnswer = document.createElement('p');
     giveAnswer.className = 'pElement';
-    Divouter.appendChild(giveAnswer);
+    divExcl.appendChild(giveAnswer);
     (Answer.value == randd ) ? giveAnswer.textContent = 'You are right': giveAnswer.textContent = 'GOT WRONG' + ' the right number is ' + randd ;
-   /*
-    if(Divouter.style.height > '300px')
+    cont++;
+ 
+   
+    if(cont > 10)
     {
-        x = document.querySelectorAll('.pElement');
-        giveAnswer.textContent = x[0].textContent = ' my ass'; 
+    
+    while (take_Classsname.firstChild)
+    {
+        take_Classsname.removeChild(take_Classsname.firstChild);
+        
     }
-*/
+        cont = 0;
+       //It is possible to add a btn to do this function, but i'll live it this way
+    }
+
+
+
+
 });
-
-

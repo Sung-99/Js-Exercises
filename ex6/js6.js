@@ -27,6 +27,21 @@ app.post('/saveInput', (req, res) => {
     });
 });
 
+
+
+        document.getElementById('formCritic').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+        
+            const formData = new FormData(this);
+            fetch('http://localhost:3000/saveInput', {
+                method: 'POST',
+                body: formData
+            })
+        });
+        
+        
+     
+
 // Start the server
 const port = 3000;
 app.listen(port, () => {

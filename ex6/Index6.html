@@ -6,19 +6,7 @@
         <script src="js4exe.js" defer></script>
         <title>Exercise</title>
     </head>
-    <script>
-        document.getElementById('formCritic').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission behavior
-        
-            const formData = new FormData(this);
-            fetch('http://localhost:3000/saveInput', {
-                method: 'POST',
-                body: formData
-            })
-        });
-        
-        
-        </script>
+    
     <body>
         <h1 id="Sub-outer-div">SOME SUBMIT</h1>
         <form id="formCritic"  action="http://localhost:3000/saveInput"  method="post">

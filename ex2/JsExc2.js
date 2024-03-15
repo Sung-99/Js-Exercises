@@ -16,5 +16,5 @@ A = MyString.textContent;
 
 setInterval(function() {
     
-    output.textContent =  A = A.slice(1,10) + A[0];
+    output.textContent = A =  A.slice(1,10) + A[0];
 },200)

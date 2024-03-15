@@ -54,7 +54,7 @@ take_Classsname = document.querySelector('#delliite');
 
 let cont = 0;
 submittt.addEventListener("click", (e) =>{
-    e.preventDefault();
+    
     
     let randd = Math.floor((Math.random() * (10 - 0) + 0));
     let giveAnswer = document.createElement('p');
@@ -75,7 +75,7 @@ submittt.addEventListener("click", (e) =>{
         cont = 0;
        //It is possible to add a btn to do this function, but i'll live it this way
     }
-
+    
 
 
 

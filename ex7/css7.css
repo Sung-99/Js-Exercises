@@ -1,8 +1,19 @@
+body{
+  background-color: black;
+}
+
+/*-outer contents--*/
+
 .My_outer_div_bin_to_hexa{
 	display:flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
+  justify-content: center;
+  gap: 130px;
+ 
 }
+
+
 
 .My_btn_bin_to_hexa {
   border: 0;
@@ -13,7 +24,7 @@
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
-  background-color: rgba(220, 0, 0, 1);
+  background-color: rgb(255, 255, 255);
   background-image: linear-gradient(
   to top left,
     rgba(0, 0, 0, 0.2),
@@ -27,7 +38,7 @@
 }
 
 .My_btn_bin_to_hexa:hover {
-  background-color: rgba(255, 0, 0, 1);
+  background-color: rgb(27, 25, 25);
 }
 
 .My_btn_bin_to_hexa:active {
@@ -35,3 +46,22 @@
     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
+
+
+/*--Most outer content inside--*/
+.inner_bin_to_hexa{
+  display:flex;
+	flex-direction: row;
+	align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+}
+
+
+/*----Outer div to input---*/
+
+.inpuAnswer input{
+  width: 90px;
+}
+

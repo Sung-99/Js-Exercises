@@ -2,6 +2,32 @@ body{
   background-color: black;
 }
 
+
+header{
+  margin-top: 30px;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+
+
+h1 {
+  color: white;
+  border: #fff;
+  border-style: solid;
+  border-radius: 25px;
+  padding: 10px;
+  transform: rotate(25deg);
+}
+/* Inner header */
+.inner_header{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+
 /*-outer contents--*/
 
 .My_outer_div_bin_to_hexa{
@@ -63,5 +89,35 @@ body{
 
 .inpuAnswer input{
   width: 90px;
+}
+
+
+
+/*---logos---*/
+.logo{
+  width: 130px;
+  display: flex;
+  gap: 30px;
+}
+
+.logo .image_logo{
+  height: 30px;
+  width: 30px;
+
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+ 
+}
+
+.inner_log, .inner_log2{
+  width: 150px;
+}
+
+.p_logo{
+  color: white;
+  text-decoration:none ;
+  font-size: 10px;
+
 }
 

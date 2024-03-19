@@ -1,6 +1,7 @@
 body{
   background-color: black;
 }
+
 a{
   text-decoration: none;
 }
@@ -13,8 +14,6 @@ header{
  
 }
 
-
-
 h1 {
   color: white;
   border: #fff;
@@ -23,7 +22,20 @@ h1 {
   padding: 10px;
   transform: rotate(25deg);
   position:absolute;
+  transform-origin: right ;
+	animation: swing 5s ease infinite;
 }
+@keyframes swing {
+	20% { transform: rotate(15deg); }	
+	40% { transform: rotate(-10deg); }
+	60% { transform: rotate(5deg); }	
+	80% { transform: rotate(-5deg); }	
+	100% { transform: rotate(0deg); }
+}
+
+
+
+
 /* Inner header */
 .inner_header{
   text-align: center;

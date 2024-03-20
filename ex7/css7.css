@@ -13,6 +13,13 @@ header{
   padding: 5px;
  
 }
+.ans{
+  margin: 0px;
+  margin-bottom: 10px;
+  left: 80px;
+  position: relative;
+}
+
 
 h1 {
   color: white;
@@ -145,3 +152,15 @@ h1 {
 
 
 
+.Answer_converted{
+  margin-top: 2px;
+  padding: 10px;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: baseline;
+  align-content: space-around;
+  text-align: center !important;
+}

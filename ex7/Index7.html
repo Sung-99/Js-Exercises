@@ -34,29 +34,22 @@
 			     </select>
                  
 		        </div>
-                <div class="inpuAnswer">
-                   <input id="answer" name="answer" type="number" min="0">
-                </div>
-            </div>
-            <button name="Convert" id="Convert">Convert</button>
-           
-            <div class="inner_bin_to_hexa">     
-  
-		        <div class="sel">
-			     <select>
-  				    <option>Binario</option>
-  				    <option>Hexa</option>
-  				    <option>Octal</option>
-  				    <option>Decimal</option>
-			     </select>
-		       </div>
-               <div class="inpuAnswer">
+                <p style="color: white;">To</p>
+                <div class="sel">
+                    <select id="optionsList2">
+                       <option value="bin">Binario</option>
+                       <option value="hex">Hexa</option>
+                       <option value="oct">Octal</option>
+                       <option value="dec">Decimal</option>
+                    </select>
+                  </div>
+                  <div class="inpuAnswer">
                     <input id="answer" name="answer" type="number" min="0">
-               </div>  
+                 </div>
             </div>
-       
 	    </div>
         <div class="Answer_converted">
+            <button name="Convert" id="Convert">Convert</button>
             <p class="ans">||</p>
             <input id="answer_converted" name="answer"  min="0" readonly>
         </div>

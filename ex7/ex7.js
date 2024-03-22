@@ -14,7 +14,7 @@ convr.addEventListener("click", () =>{
    
       if(options.selectedOptions[0].label == "Decimal" && options2.selectedOptions[0].label == "Binario" )
       {
-        out.value = parseInt(inputEntry.value) + 1;
+        out.value = parseInt(inputEntry.value) +2;
       } 
       
 

@@ -12,23 +12,26 @@ let myBin = [];
 
 convr.addEventListener("click", () =>{
 
-    
+
       let convertedNumb = parseInt(inputEntry.value);  
       if(options.selectedOptions[0].label == "Decimal" && options2.selectedOptions[0].label == "Binario" )
       {
         //Easy solution*****
-       /*while(convertedNumb > 1){ 
+       while(convertedNumb >= 1){ 
         if(convertedNumb % 2 == 0) {
             myBin.push(0);
+           
         }else{
             myBin.push(1);
+            
         }
-        convertedNumb = convertedNumb/2;
+        convertedNumb = Math.floor(convertedNumb/2);
        }
-       if  (convertedNumb == 1)myBin.push(1);
+    
+       
        let instantialVariablw = myBin.toReversed().join("");
        out.value = instantialVariablw;
-       *****/
+       
        
       } 
       

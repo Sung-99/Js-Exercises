@@ -3,6 +3,8 @@ let options = document.querySelector('#optionsList');
 let options2 = document.querySelector('#optionsList2');
 
 let convr = document.querySelector('#Convert')
+let Limpar = document.querySelector('#Limpar')
+
 
 let out = document.querySelector('#answer_converted');
 
@@ -65,9 +67,14 @@ convr.addEventListener("click", () =>{
        }else{
         out.value = result;
        }
-       onlyBin = 0;
+      
        
       } 
       
 
+})
+
+Limpar.addEventListener("click", () =>{
+    out.value = '';
+    inputEntry.value = '';
 })

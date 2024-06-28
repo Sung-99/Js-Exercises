@@ -11,7 +11,15 @@ p{
 
 input{
     width: 70px;
+    margin-bottom: 5px;
+   
 }
+
+button{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
 
 /*----contents inner body---*/
 .block-content{
@@ -27,4 +35,9 @@ input{
     display: flex;
     justify-content: space-evenly;
     
+}
+
+.outer-block-input{
+    display: flex;
+    justify-content: space-evenly;
 }

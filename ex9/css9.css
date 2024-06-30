@@ -10,9 +10,8 @@ p{
 }
 
 input{
-    width: 70px;
+    width: 120px;
     margin-bottom: 5px;
-   
 }
 
 button{
@@ -40,4 +39,10 @@ button{
 .outer-block-input{
     display: flex;
     justify-content: space-evenly;
+}
+
+.answer{
+    color: white;
+    display: flex;
+    justify-content: space-around
 }

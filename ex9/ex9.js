@@ -8,6 +8,5 @@ button.addEventListener("click", () =>{
 
     answerArea.textContent = numberInputed.value;
 
-
 });
     

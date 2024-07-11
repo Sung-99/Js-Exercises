@@ -4,3 +4,13 @@ body{
 }
 
 
+p{
+    color: white;
+    font-size: 20px;
+
+}
+
+.question-inner-div-flex{
+    display: flex;
+    justify-content: space-around;
+}

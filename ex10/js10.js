@@ -41,7 +41,7 @@ compare.onclick = function (){
     objec1 =
     { 
         name: inp_Name1.value,
-        
+       
     };
     objec2 =
     { 
@@ -50,4 +50,3 @@ compare.onclick = function (){
     };
     console.log(deepEqual(objec1, objec2));
 }  
-

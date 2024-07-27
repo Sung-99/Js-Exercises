@@ -1,12 +1,18 @@
 //let stringg = document.querySelector('input');
 
 
-let btn = document.querySelector('button');
-let p = document.querySelector('.example-text');
+const p = document.querySelector('.example-text');
 
-let x = p.innerText.toString();
-let y = x.split('\n')
-
-btn.onclick = function(){
-    console.log(y);
-};
+// This is the modern way to set up event handlers:
+document.querySelector('button').addEventListener("click", function(){
+  // First, clean up leading or trailing spaces from the whole string
+  let x = p.textContent.trim();  
+  
+  // Split the string at newlines into an array,  then loop over that array and 
+  // trim each item within the array and return that item into the new array
+  // returned by the map() function.
+  let y = x.split('\n').map(function(item){
+    return item.trim();
+  });
+  console.log(y);
+});

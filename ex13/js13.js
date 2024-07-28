@@ -11,8 +11,11 @@ document.querySelector('button').addEventListener("click", function(){
   // Split the string at newlines into an array,  then loop over that array and 
   // trim each item within the array and return that item into the new array
   // returned by the map() function.
-  let y = x.split('\n').map(function(item){
-    return item.trim();
+  let y = x.split(',').map(function(item, idx){
+    let obj = {};  
+
+    obj[idx] = item.trim();
+    return obj;
   });
-  console.log(y);
+  console.log(console.table(y));
 });

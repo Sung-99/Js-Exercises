@@ -1,3 +1,5 @@
-generate([X],[X|_])
-generate(X, Y, [Y, X|_]):- X is Y+1.
+generate(_,0,[]).
+generate(X, X, [X]).
+generate(X, Y, []):- X > Y.
+generate(X, Y, [X|Rest]):- X =< Y, Next is X + 1, generate(Next, Y, Rest).
 

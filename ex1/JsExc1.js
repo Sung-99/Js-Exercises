@@ -93,15 +93,7 @@ let childOIsoceleTriangleHeight = NewW[2].appendChild(side2Isocele);
 sub.appendChild(submittt);
 
 
-let result = document.createElement("label");
-result.style.display = "block";
-result.style.height = "20px";
-result.style.width = "70px";
-result.style.backgroundColor = "white";
-result.style.position = "relative";
-result.style.left = "214px";
-result.placeholder = "Result";
-result.style.color = "black";
+
 
 outer_content.appendChild(result);
 

@@ -1,23 +1,30 @@
-function countCorrectAnswers(teaType, answers) {
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let linhas = [];
+rl.on('line', (linha) => {
+    linhas.push(linha);
+    
+    if (linhas.length === 2) {
+      countCorrectAnswers(linhas);
+        rl.close();
+    }
+});
+
+function countCorrectAnswers(answers) {
   let correctCount = 0;
-  
+  const numeros = answers[1].split('').map(Number);
+  const escolha = parseInt(answers[0]);
   // Check each contestant's answer
-  for (let i = 0; i < answers.length; i++) {
-      if (answers[i] === teaType) {
+  for (let i = 0; i < numeros.length; i++) {
+      if (numeros[i] === escolha)  {
           correctCount++;
       }
   }
   
-  return correctCount;
+  console.log(correctCount);
 }
 
-// Example input
-const teaType = Math.floor((Math.random() * 4) + 1); // Actual tea type
-var answers = [4]; // Contestants' answers
-for (let i = 0; i <= 4; i++) {
-answers[i] = Math.floor((Math.random() * 4) + 1);
-}
-const result = countCorrectAnswers(teaType, answers);
-console.log(result); // Output the number of correct answers
-console.log(answers);
-console.log(teaType);

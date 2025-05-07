@@ -5,13 +5,13 @@ const rl = readline.createInterface({
 });
 
 let linhas = [];
-rl.on('line', (linha) => {
-    linhas.push(linha);
+rl.on('line', (input) => {
     
-    if (linhas.length === 1) {
-        linhas.push((input.split(' '))[0]);
-        linhas.push((input.split(' '))[1]);
-        linhas.push((input.split(' '))[2]);    
+    
+    if (linhas.length < 1) {
+        linhas.push(Number((input.split(' '))[0]));
+        linhas.push(Number((input.split(' '))[1]));
+        linhas.push(Number((input.split(' '))[2]));    
         Sort(linhas);
         rl.close();
     }
@@ -19,6 +19,6 @@ rl.on('line', (linha) => {
 
 
 function Sort(S){
-	 
+	 console.log(typeof Number(linhas[1]) === 'number');
 
 }
